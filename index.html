@@ -1,9 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Calculator</title>
     <style>
-        .container{
+        @font-face {
+            font-family: 'DS-Digital Normal';
+            font-style: normal;
+            font-weight: normal;
+            src: local('DS-Digital Normal'), url('DS-DIGI.woff') format('woff');
+        }
+
+        .container {
             height: 410px;
             width: 320px;
             background-color: #47484b;
@@ -13,7 +21,7 @@
             padding-top: 35px;
         }
 
-        .screen{
+        .screen {
             width: 300px;
             font-size: 40px;
             text-align: right;
@@ -21,9 +29,10 @@
             margin-left: 5px;
             background-color: #aec077;
             border-radius: 10px;
+            font-family:'DS-Digital Normal' ;
         }
 
-        .btn-container{
+        .btn-container {
             height: 290px;
             width: 320px;
             display: flex;
@@ -32,11 +41,11 @@
             margin-top: 20px;
             flex-wrap: wrap;
             justify-content: space-evenly;
-           
-            
+
+
         }
 
-        .btn{
+        .btn {
             width: 55px;
             font-size: 40px;
             margin: 8px;
@@ -44,47 +53,51 @@
             height: 55px;
             background-color: #7c838f;
             color: white;
+
+            border-radius: 8px;
         }
 
-        .equals{
+        .equals {
             background-color: tomato;
         }
 
-        .operator{
+        .operator {
             background-color: #7daaf5;
         }
 
-        .btn:hover{
+        .btn:hover {
             box-shadow: 0 0 3px 0 white;
             transition: 0.5s;
             cursor: pointer;
         }
     </style>
 </head>
+
 <body>
     <div class="container">
-       <input type="text" value="0" class="screen">
-       <div class="btn-container">
-          <button class="btn">7</button>
-          <button class="btn">4</button>
-          <button class="btn">1</button>
-          <button class="btn">0</button>
+        <input type="text" value="0" class="screen">
+        <div class="btn-container">
+            <button class="btn">7</button>
+            <button class="btn">4</button>
+            <button class="btn">1</button>
+            <button class="btn">0</button>
 
-          <button class="btn">8</button>
-          <button class="btn">5</button>
-          <button class="btn">2</button>
-          <button class="btn">.</button>
+            <button class="btn">8</button>
+            <button class="btn">5</button>
+            <button class="btn">2</button>
+            <button class="btn">.</button>
 
-          <button class="btn">9</button>
-          <button class="btn">6</button>
-          <button class="btn">3</button>
-          <button class="btn equals">=</button>
+            <button class="btn">9</button>
+            <button class="btn">6</button>
+            <button class="btn">3</button>
+            <button class="btn equals">=</button>
 
-          <button class="btn operator">/</button>
-          <button class="btn operator">x</button>
-          <button class="btn operator">-</button>
-          <button class="btn operator">+</button>
-       </div>
+            <button class="btn operator">/</button>
+            <button class="btn operator">x</button>
+            <button class="btn operator">-</button>
+            <button class="btn operator">+</button>
+        </div>
     </div>
 </body>
+
 </html>
